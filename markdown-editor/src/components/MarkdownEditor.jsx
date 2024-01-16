@@ -1,17 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import { Row } from 'react-bootstrap';
 import Badge from 'react-bootstrap/Badge';
+import { ThemeContext } from "./../contexts/ThemeContext";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/App.css';
 
 
 function MarkdownEditor() {
-  // Task 4: Define your state here
-
-  // create a state
-  const [colClass, setColClass] = useState('col-6');
+    const { colClass, setColClass } = useContext(ThemeContext);
 
   // update the state
   const topDown = (isChecked) => {
