@@ -1,7 +1,8 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../css/App.css";
-import Container from "react-bootstrap/Container";
-import MarkdownCheatSheet from "./MarkdownCheatSheet";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../css/App.css';
+import Container from 'react-bootstrap/Container';
+import MarkdownCheatSheet from './MarkdownCheatSheet';
+import MarkdownEditor from './MarkdownEditor';
 
 function App() {
   // Task 5: Write state for col here
@@ -17,10 +18,9 @@ function App() {
         </p>
       </div>
 
-      {/* Task 3: MarkdownEditor here */}
+      <MarkdownEditor />
 
       <MarkdownCheatSheet />
-      
     </Container>
     // Task 5: ThemeContext.Provider closing tag here
   );
